@@ -1,0 +1,65 @@
+body{
+    display:block;
+    overflow:hidden;
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background: #131313;
+    font-family: 'Fira Mono', monospace;
+    color: #fff;
+}
+
+input[type=text] {
+    background-color: #292a2b;
+    color: white;
+    border:none;
+    height: 25px;
+    font-family: 'Fira Mono', monospace;
+}
+
+button {
+    background-color: #292a2b;
+    color: white;
+    border:none;
+    font-family: 'Fira Mono', monospace;
+}
+
+p,h3 {
+    margin-bottom: 0px;
+}
+
+.footerleft{
+    position:absolute;
+    bottom: 50px;
+    left: inherit;
+    text-align:left;
+}
+
+.footerright{
+    position:absolute;
+    bottom: 50px;
+    right: 50px;
+    text-align:right;
+}
+
+.complaintcontainer{
+    width: 400px;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas:    
+        "ptext ptext"
+        "input submit";
+}
+
+.refreshcontainer{
+    display:flex;
+    justify-content: right;
+    align-items: flex-end;
+    gap: 25px;
+}
