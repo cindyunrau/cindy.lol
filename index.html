@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Fuck Cindy</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/glitch.css">
-    <link rel="icon" href="favicon.png" sizes="any">
+    <link rel="icon" href="images/favicon.png" sizes="any">
+    <script src="scripts/script.js"></script>
 </head>
 <body>
-
-<div class="glitchcontainer">
-    <div class="glitchitem" title="a&nbsp;">a&nbsp;</div>
-    <div class="glitchitem" title="pretty&nbsp;">pretty&nbsp;</div>
-    <div class="glitchitem" title="face&nbsp;">face&nbsp;</div>
-    <div class="glitchitem" title="does&nbsp;">does&nbsp;</div>
-    <div class="glitchitem" title="not&nbsp;">not&nbsp;</div>
-    <div class="glitchitem" title="mean&nbsp;">mean&nbsp;</div>
-    <div class="glitchitem" title="a&nbsp;">a&nbsp;</div>
-    <div class="glitchitem" title="pretty&nbsp;">pretty&nbsp;</div>
-    <div class="glitchitem" title="heart&nbsp;">heart</div>
-</div>
+    <a id="infoicon" href="pages/info.html">?</a>
+    <div id="maintext">
+        <!-- Glitchy text dynamically rendered here in renderMessage(message) -->
+    </div>
 
 
-    <div class="footerright">
+    <div id="footerright">
         <div class="refreshcontainer">
-            <h3>Click me -></h3>
-            <img src="favicon-white.png" width='100px' height='100px'>
+            <div id="imgcontainer">
+                <img  src="images/favicon-white.png" id="fuimage" >
+            </div>
+            <h3 id="hiddenmessage">don't...</h3>
+            
         </div>
     
-        <p>There are 34 current complaints</p>
+        <p>Current Complaints:
+            <script type="text/javascript">
+                document.write(getNumComplaints());
+            </script> 
+        </p>
+        <p>Fuck Cindy?
+            <script type="text/javascript">
+                document.write(getNumClicks());
+            </script> 
+        </p>
     </div>
     <div class="footerleft">
         <div class="complaintcontainer">
-            <p style="grid-area:ptext">Enter your complaints about Cindy here</p>
-            <input type="text" name="complaints" style="grid-area:input; width:100%">
-            <button type="button" style="grid-area:submit">Submit</button>
+            
+           <form id="form">
+                <label> enter your complaints about cindy here: </label>
+                <input id="input" type="text" required>
+                <button type="submit">submit</button>
+            </form>
+            <p id="msg"></p>
+
         </div>
     </div>
 
